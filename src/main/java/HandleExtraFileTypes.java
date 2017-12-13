@@ -465,6 +465,12 @@ public class HandleExtraFileTypes extends ImagePlus implements PlugIn {
 		// do what ever you have to do to recognise your own file type
 		// and then call appropriate plugin using the above as models
 		// e.g.:
+		
+		if(name.endsWith(".oif")){
+			String dir=path+".files"+File.separator;
+			ij.io.DirectoryChooser.setDefaultDirectory(dir);
+			return tryPlugIn("AJ.TwoPhoton_Import", dir);
+		}
 
 		/*
 		// A. Dent: Added XYZ handler
