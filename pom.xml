@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>16.1.0</version>
+		<version>17.1.1</version>
 		<relativePath />
 	</parent>
 
@@ -179,6 +179,9 @@
 		<!-- TEMP: until pom-scijava 16.2.0 is released. -->
 		<xmlgraphics-commons.version>2.2</xmlgraphics-commons.version>
 		<batik.version>1.9.1</batik.version>
+
+		<!-- NB: Deploy releases to the ImageJ Maven repository. -->
+		<releaseProfiles>deploy-to-imagej</releaseProfiles>
 	</properties>
 
 	<repositories>
