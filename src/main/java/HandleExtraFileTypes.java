@@ -469,7 +469,7 @@ public class HandleExtraFileTypes extends ImagePlus implements PlugIn {
 		if(name.endsWith(".oif")){
 			String dir=path+".files"+File.separator;
 			ij.io.DirectoryChooser.setDefaultDirectory(dir);
-			return tryPlugIn("AJ.TwoPhoton_Import", dir);
+			return tryPlugIn("ajs.tools.TwoPhoton_Import", dir);
 		}
 
 		/*
