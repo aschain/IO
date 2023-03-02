@@ -2,7 +2,7 @@
  * #%L
  * IO plugin for Fiji.
  * %%
- * Copyright (C) 2008 - 2021 Fiji developers.
+ * Copyright (C) 2008 - 2023 Fiji developers.
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -1034,6 +1034,7 @@ public void run(String arg) {
 					fr.addFrame(tmp);
 			} catch(Exception e)  {
 				IJ.showMessage("Save as "+type, ""+e);
+				break;
 			}
 
 			System.gc();
