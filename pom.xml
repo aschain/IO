@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>37.0.0</version>
+		<version>40.0.0</version>
 		<relativePath />
 	</parent>
 
 	<groupId>sc.fiji</groupId>
 	<artifactId>IO_</artifactId>
-	<version>4.2.3-SNAPSHOT</version>
+	<version>4.3.1-SNAPSHOT</version>
 
 	<name>IO</name>
 	<description>IO plugin for Fiji.</description>
@@ -179,6 +179,7 @@
 		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
 
 		<image4j.version>0.7</image4j.version>
+		<metadata-extractor.version>2.19.0</metadata-extractor.version>
 	</properties>
 
 	<repositories>
@@ -212,6 +213,11 @@
 		</dependency>
 
 		<!-- Third party dependencies -->
+		<dependency>
+			<groupId>com.drewnoakes</groupId>
+			<artifactId>metadata-extractor</artifactId>
+			<version>${metadata-extractor.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>com.itextpdf</groupId>
 			<artifactId>itextpdf</artifactId>
